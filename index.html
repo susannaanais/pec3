@@ -55,13 +55,31 @@ alt="icona gaudir">
         <h2>Uneix-te al club</h2>
         <p>Estem mirant la teva propera pel·lícula preferida. T'ho perdràs?</p>
         <form action="certificat.php" method="post">
-		<input type="text" placeholder="Nom" id="nom" required aria-required="true"/>
-                <input type="text" placeholder="Correu electrònic" id="mail" required aria-required="true"/>
-                <input type="text" placeholder="Contrasenya" id="contrasenya" required aria-required="true"/>
+		<fieldset>
+			<input type="text" placeholder="Nom" id="name" required aria-required="true"/>
+			<input type="text" placeholder="Correu electrònic" id="mail" required aria-required="true"/>
+			<input type="text" placeholder="Contrasenya" id="password" required aria-required="true"/>
+		</fieldset>
+		<small>INFORMACIÓ SOBRE PROTECCIÓ DE DADES DE OSCARS CLUB. Finalitats: recollida de dades per a la inscripció com a soci de l'interessat. Legitimació: Consentiment de l'interessat. Destinataris: No estan previstes cessions de dades a tercers, excepte obligació legal. Drets: Pot retirar el seu consentiment en qualsevol moment, així com accedir, rectificar, suprimir les seves dades i altres drets dirigint-se a oscarsclub@oscarsclub.org. Informació Addicional: Pot ampliar la informació en l'enllaç d'Avís Legal i Política de privacitat.</small>
+		<label><input type="checkbox" id="accept_terms">He llegit i accepto la política de privacitat</label>
+		<input type="submit" value="Registra'm">
         </form>
     </article>
   </main>
   <footer>
+	  <nav>
+		  <ul>
+			  <li>Sobre nosaltres</li>
+			  <li>Avís legal</li>
+			  <li>Política de privacitat</li>
+			  <li>Facebook</li>
+			  <li>Twitter</li>
+			  <li>Youtube</li>
+		  </ul>
+	  </nav>
+	  <p>© 2020 Susanna Anaïs Pérez Cufí</p>
+	  <p><a href="https://www.flaticon.com" title="Pàgina Flaticon" target:"_blank">Icones flaticon.com</p>
+	  <p><a href="https://unsplash.com/" title="Banc d'imatges lliures de drets" target:"_blank">Imatges unsplash.com</p>
   </footer>
 </body>
 </html>
