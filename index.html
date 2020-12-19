@@ -24,11 +24,11 @@
           <button>Inicia sessió</button>
   </header>
   <main>
-      <section>
+      <article>
           <h2>Què és Oscars Club?</h2>
           <p>Oscars Club organitza clubs virtuals de cinema de diversos gèneres i en diferents llengües, per als amants del cinema que vulguin compartir reflexions i debatre sobre les pel·lícules que els interessen sense necessitat d'haver d'anar a un espai físic.</p>
-      </section>
-      <section>
+      </article>
+      <article>
           <h2>Com funciona?</h2>
           <figure>
               <img src="img/howto-register.png"
@@ -46,12 +46,22 @@ alt="icona elecció"
                    <figcaption>Tria una pel·lícula</figcaption>
       </figure>
     <figure>
-              <img src="img/howto-film.png"
+              <img src="img/howto-speech.png"
 alt="icona gaudir">
         <figcaption>Gaudeix del debat </figcaption>
       </figure>
-      </section>
-      <section>
+    </article>
+    <article>
+        <h2>Uneix-te al club</h2>
+        <p>Estem mirant la teva propera pel·lícula preferida. T'ho perdràs?</p>
+        <form action="certificat.php" method="post">
+            <fieldset>
+				<input type="text" placeholder="Nom" id="nom" required aria-required="true"/>
+                <input type="text" placeholder="Correu electrònic" id="mail" required aria-required="true"/>
+                <input type="text" placeholder="Contrasenya" id="contrasenya" required aria-required="true"/>
+            </fieldset>
+        </form>
+    </article>
   </main>
   <footer>
   </footer>
