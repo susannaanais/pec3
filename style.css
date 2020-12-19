@@ -1,8 +1,0 @@
-html {
-	font-size: 10px;
-	font-family: 'Montserrat', sans-serif;
-	box-sizing: border-box;
-}
-*, *::before, *::after {
-	box-sizing: inherit;
-}
