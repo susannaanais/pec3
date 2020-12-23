@@ -8,12 +8,88 @@ html {
 	box-sizing: inherit;
 }
 body {
-  	font-family: 'Noto Serif', serif;
+    margin: 0;  
+    font-family: 'Noto Serif', serif;
+    font-size: 1.6rem;
+    line-height: 1.5em;
+    background-color: #e8e8e8;
+    color: #1c1c1c;
 }
-header, footer {
-	font-family: 'Open Sans', sans-serif;
+/* Flexbox Header */
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+.content_box {
+    
+    background: aqua;
+  }
+.content_box {
+    flex: 1 200px;
+    flex-wrap: wrap;
+    padding: 1em;
+  }
+.content_box:nth-of-type(2) {
+    flex: 3 400px;
+  }
+.content_box:nth-of-type(3){
+    text-align: right;
 }
-
-figure img {
-	display: block;
+/* Header Nested children */
+.title {
+    display: inline;
+    text-align: center;
+    margin-left: 0.3em; 
+}
+.logo {
+    vertical-align: middle;
+}
+nav ul {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+}
+nav ul li {
+    flex: 1 300px; 
+    flex: auto;
+    text-align: center;
+}
+nav a {
+    color: rgb(28, 28, 28);
+    text-decoration: none;
+}
+nav a:hover {
+    color: rgb(28, 28, 28, 0.5);
+}
+nav a:active {
+    font-style: italic;
+    font-weight: 700;
+}
+button {
+    line-height: 1.5em;
+    padding: 0.2em 0.4em; 
+    margin-top: 1.2em;
+    background-color: rgb(155, 23, 0);
+    color: white;
+}
+@media all and (max-width:500px) {
+/* For mobile phones: */
+.content_box {
+    flex: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+div:nth-of-type(3) {
+    order: -1;
+    text-align: center;
+    align-items: center;
+}
+nav ul {
+    flex-direction: column;
+}
+nav ul li {
+    text-align: center;
+}
 }
