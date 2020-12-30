@@ -72,6 +72,9 @@ a {
 a:hover {
     color: rgb(28, 28, 28);
 }
+a img:hover {
+    opacity: 0.5;
+}
 button {
     padding: 0.4em 0.9em; 
     background-color: rgb(155, 23, 0);
