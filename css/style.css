@@ -60,6 +60,9 @@ h2 {
     .clubs_flex_wrapper h3:before {
         width: 8%;  
     }
+    .grid_container h4:before {
+        width: 4%;  
+    }
 }
 /* || Utilities */
 strong {
@@ -382,4 +385,19 @@ flex-direction: column;
     font-weight: 700;
     font-size: smaller;
     padding: 0.5em;
+}
+@media all and (max-width:700px) {
+    /* For mobile phones: */
+    .grid_container  {
+        display: contents;
+    }
+    .grid_container figure {
+        margin: 1em 7em 2em 7em;
+    }
+    .grid_container figure:last-child {
+        margin-bottom: 7em;
+    }
+    .grid_area2, .grid_area3, .grid_area4, .grid_area5, .grid_area6 {
+        padding-top: 2em;
+      }
 }
