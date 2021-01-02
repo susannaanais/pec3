@@ -422,9 +422,12 @@ flex-direction: column;
     margin-bottom: 0;
   }
 .grid_container figure {
-      margin: 0;
-      background-color: rgb(250,250,250);
-      box-shadow: 0.2em 0.4em 0.2em rgb(192,192,192);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    background-color: rgb(250,250,250);
+    box-shadow: 0.2em 0.4em 0.2em rgb(192,192,192);
   }
 .grid_container img {
     width: 100%;
