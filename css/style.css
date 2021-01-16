@@ -439,18 +439,6 @@ flex-direction: column;
     font-size: smaller;
     padding: 0.5em;
 }
-.figure_sessions {
-    float:left;
-    max-width: 10em;
-    max-height: 10em;
-    margin: 0;
-    padding-right: 1em;
-    shape-outside: circle(50%);
-    }
-.img_sessions {
-    max-width: 100%;
-    border-radius: 50%;
-}
 @media all and (max-width:768px) {
     /* For mobile devices: */
     .grid_container  {
@@ -465,6 +453,19 @@ flex-direction: column;
     .grid_area2, .grid_area3, .grid_area4, .grid_area5, .grid_area6 {
         padding-top: 2em;
       }
+}
+/* || DETALL SESSIO */
+.figure_sessions {
+    float:left;
+    max-width: 10em;
+    max-height: 10em;
+    margin: 0;
+    padding-right: 1em;
+    shape-outside: circle(50%);
+    }
+.img_sessions {
+    max-width: 100%;
+    border-radius: 50%;
 }
 
 /* || MEDIA */
